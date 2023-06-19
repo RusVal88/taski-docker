@@ -12,9 +12,9 @@ jobs:
       postgres:
         image: postgres:13.10
         env:
-          POSTGRES_USER: django
-          POSTGRES_PASSWORD: django
-          POSTGRES_DB: django
+          POSTGRES_USER: ruslan_user
+          POSTGRES_PASSWORD: ruslan_password
+          POSTGRES_DB: ruslan_db
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5

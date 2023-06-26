@@ -60,7 +60,7 @@ jobs:
         with:
           context: ./backend/
           push: true
-          tags: rusval88/taski_backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/taski_backend:latest
   frontend_tests:
     runs-on: ubuntu-latest
     steps:
@@ -96,7 +96,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: rusval88/taski_frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/taski_frontend:latest
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -115,7 +115,7 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          tags: rusval88/taski_gateway:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/taski_gateway:latest
   deploy:
     runs-on: ubuntu-latest
     needs:

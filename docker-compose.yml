@@ -26,6 +26,6 @@ services:
   gateway:
     build: ./nginx/
     volumes:
-      - static:/staticfiles/
+      - static:/staticfiles
     ports:
       - 8000:80

@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from distutils.util import strtobool
 
+from distutils.util import strtobool
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -14,7 +14,6 @@ DEBUG = bool(strtobool(os.getenv('DEBUG', 'false')))
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
